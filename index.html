@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>fiftystatesfiftylines</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="" />
+    <meta
+      name="keywords"
+      content="fotografia, film, fotograf, fotograf na ślub, kamerzysta na wesele, wesele"
+    />
+    <title>Document</title>
+    <link rel="stylesheet" href="css\main.css" type="text/css" />
+    <link rel="stylesheet" href="css/fontello.css" type="text/css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--START-->
+    <div id="homeUp">
+      <nav>
+        <div class="menu">
+          <div class="i1">
+            <li class="item1">
+              <a href="index.html">HOME</a>
+            </li>
+            <li class="item2">
+              <a href="stories.html">WALL</a>
+            </li>
+          </div>
+
+          <!-- <a class="center" href=""><img src="/img/mc.png" /></a> -->
+
+          <div class="i2">
+            <li class="item3">
+              <a href="about.html">HEY!!!</a>
+            </li>
+            <!-- <li class="item4">
+              <a href="contact.html">CONTACT</a>
+            </li> -->
+          </div>
+        </div>
+      </nav>
+
+      <h2>
+        TO&nbsp;
+        <span
+          class="typewrite"
+          data-loop="yes"
+          data-speed="120"
+          data-delay="3000"
+          data-words='[" SUNSHINE AND SMURFIE", " INARA AND SHREY", " BABYBOO AND BUBU", " US"]'
+        ></span>
+      </h2>
+    </div>
+
+    <!--button to go up-->
+    <button id="scrollUp" onclick="goUp()">
+      <i class="material-icons" id="arrowIco">arrow_upward</i>
+    </button>
+
+    <!--ABOUT ME-->
+    <div id="aboutMe">
+      <div class="buttonAboutMe">
+        <a href="">
+          <h2>
+            “I don't know anything with certainty, but seeing the stars makes me
+            dream.”
+          </h2>
+        </a>
+        - Vincent Van Gogh
+      </div>
+    </div>
+
+    <!--VIDEO BLOCK-->
+    <div id="videoBlock">
+      <video
+        id="video1"
+        src="video/v1.mp4"
+        type="video/mp4"
+        autoplay
+        loop
+        muted
+        playsinline
+      ></video>
+      <div class="videoTEXT">
+        <h5></h5>
+      </div>
+    </div>
+
+    <!--ABOUT ME-->
+    <div id="aboutMe">
+      <div class="buttonAboutMe">
+        <a href="">
+          <h2>
+            खड़ा हूँ आज भी वहीं // के दिल फिर बेकरार है // खड़ा हूँ आज भी वहीं //
+            के तेरा इंतज़ार है
+          </h2>
+        </a>
+      </div>
+      - "Choo Lo" by The Local Train
+      <!-- żeby mnie poznać -->
+    </div>
+
+    <!--PHOTO ROW 1-->
+    <!-- <div id="photo-row-1">
+        <div id="span"></div>
+        <div id="row-1">
+            <div class="title-row-1">
+            <h2>I</h2>
+            </div>
+            <div class="text-row-1">Alibag</div>
+        </div>
+        </div> -->
+
+    <div id="photo-row-1">
+      <div id="span"></div>
+      <div id="row-2">
+        <div class="title-row-2">
+          <h2>I</h2>
+        </div>
+        <div class="text-row-2">Alibag</div>
+      </div>
+    </div>
+
+    <!--PHOTO ROW 2-->
+    <div id="photo-row-2">
+      <div id="span"></div>
+      <div id="row-2">
+        <div class="title-row-2">
+          <h2>II</h2>
+        </div>
+        <div class="text-row-2">Bombay</div>
+      </div>
+    </div>
+
+    <!--PHOTO ROW 3-->
+    <!-- <div id="photo-row-3">
+      <div id="span"></div>
+      <div id="row-3">
+        <div class="title-row-3">
+          <h2>Wspomnienia</h2>
+        </div>
+        <div class="text-row-3">Bo to one mają największą wartość.</div>
+      </div>
+    </div> -->
+
+    <div id="aboutMe">
+      <div class="buttonAboutMe">
+        <a href="">
+          <h2>To a million more of these...</h2>
+        </a>
+      </div>
+      p.s. For next time, adding a can of RedBull and a pack of considerate
+      boyfriend to travel checklist
+    </div>
+    <!--FOOTER-->
+    <!-- <div id="footer">
+      <a
+        href="https://www.facebook.com/profile.php?id=100082131255967"
+        target="_blank"
+        ><div class="social-media"><i class="icon-facebook"></i></div
+      ></a>
+      <a href="https://www.instagram.com/framesinflames/" target="_blank"
+        ><div class="social-media"><i class="icon-instagram"></i></div
+      ></a>
+      <a href="https://vimeo.com/user159423883" target="_blank"
+        ><div class="social-media"><i class="icon-youtube-play"></i></div
+      ></a>
+      <a href="https://www.facebook.com/" target="_blank"
+        ><div class="social-media-mail">
+          <h4></h4>
+          <i class="icon-mail"></i></div
+      ></a>
+    </div> -->
+
+    <!-- typeWritting Script / main text-->
+    <script src="typewriting-master/typewriting.min.js"></script>
+
+    <!-- scroll up-->
+    <script>
+      let scrollUp = document.getElementById("scrollUp");
+
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 100 ||
+          document.documentElement.scrollTop > 100
+        ) {
+          scrollUp.style.display = "block";
+        } else {
+          scrollUp.style.display = "none";
+        }
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+      function goUp() {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
+    </script>
+  </body>
+</html>
